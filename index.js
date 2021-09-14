@@ -44,11 +44,10 @@ const Calculator = {
 }
 
 function actionApplyer(start, array){
-    if (array.length === 0){
-        return start
-    }else {
-        
+    for(let a= 0; a<array.length; a++){
+        start = array[a](start)
     }
+    return start
 }
 
 
